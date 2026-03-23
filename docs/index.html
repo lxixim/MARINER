@@ -8,6 +8,12 @@
       name="description"
       content="Placeholder academic project page for paper summary, figures, demo, and citation."
     />
+    <meta name="theme-color" content="#0f5f66" />
+    <meta property="og:title" content="[Paper Title] | Project Page" />
+    <meta
+      property="og:description"
+      content="Placeholder academic project page for paper summary, figures, demo, and citation."
+    />
     <link rel="stylesheet" href="static/css/style.css" />
   </head>
   <body>
@@ -16,9 +22,11 @@
         <div class="topbar">
           <a class="brand" href="#top">MARINER</a>
           <nav class="topnav" aria-label="Section navigation">
+            <a href="#abstract">Abstract</a>
             <a href="#overview">Overview</a>
             <a href="#method">Method</a>
             <a href="#results">Results</a>
+            <a href="#resources">Resources</a>
             <a href="#citation">Citation</a>
           </nav>
         </div>
@@ -41,9 +49,14 @@
               Institution
             </p>
             <p class="venue">[Conference / Journal / arXiv / Under Review]</p>
+            <p class="paper-note">
+              Replace this header first: title, authors, affiliation, venue, and
+              the five resource buttons below.
+            </p>
 
             <div class="button-row">
               <a class="button primary" href="#">Paper</a>
+              <a class="button" href="#">arXiv</a>
               <a class="button" href="#">Code</a>
               <a class="button" href="#">Dataset</a>
               <a class="button" href="#">Demo Video</a>
@@ -72,10 +85,10 @@
     </header>
 
     <main class="site-shell">
-      <section class="section two-up">
+      <section class="section two-up" id="abstract">
         <article class="content-card">
           <p class="section-kicker">Abstract</p>
-          <h2>What This Project Is About</h2>
+          <h2>What This Paper Claims</h2>
           <p>
             This paragraph is a placeholder abstract. Summarize the problem,
             explain your main idea, and highlight the outcome in two or three
@@ -85,14 +98,44 @@
         </article>
 
         <article class="content-card">
-          <p class="section-kicker">Quick Facts</p>
-          <h2>What Readers Usually Need First</h2>
-          <ul class="fact-list">
-            <li>Problem setting: describe the input and output.</li>
-            <li>Main contribution: what is new in this work.</li>
-            <li>Primary evidence: benchmark, user study, or qualitative results.</li>
-            <li>Availability: code, data, checkpoints, or supplementary files.</li>
+          <p class="section-kicker">News</p>
+          <h2>Release Timeline Placeholder</h2>
+          <ul class="news-list">
+            <li><span>2026-03</span> Project page skeleton initialized.</li>
+            <li><span>20XX-XX</span> Add paper PDF and camera-ready citation.</li>
+            <li><span>20XX-XX</span> Release code repository or checkpoints.</li>
+            <li><span>20XX-XX</span> Add demo video, poster, or supplementary files.</li>
           </ul>
+        </article>
+      </section>
+
+      <section class="section highlight-grid">
+        <article class="content-card highlight-card">
+          <p class="section-kicker">Task</p>
+          <h3>Input To Output</h3>
+          <p>
+            Use one sentence to define the problem setup. This works well for
+            image-to-image, text-to-image, 3D reconstruction, retrieval, or agent
+            systems.
+          </p>
+        </article>
+
+        <article class="content-card highlight-card">
+          <p class="section-kicker">Contribution</p>
+          <h3>Main Technical Idea</h3>
+          <p>
+            State the central novelty in plain language before the reader reaches
+            the detailed method section.
+          </p>
+        </article>
+
+        <article class="content-card highlight-card">
+          <p class="section-kicker">Evidence</p>
+          <h3>Why It Matters</h3>
+          <p>
+            Mention the benchmark win, efficiency gain, human evaluation, or
+            qualitative leap that supports the paper.
+          </p>
         </article>
       </section>
 
@@ -129,12 +172,17 @@
 
         <div class="split-layout">
           <div class="stack">
-            <article class="content-card">
+          <article class="content-card">
               <h3>Component A</h3>
               <p>
                 Placeholder text for the first part of your method. Explain the
                 motivation and what problem this module solves.
               </p>
+              <ul class="fact-list compact-list">
+                <li>What goes in.</li>
+                <li>What transformation happens.</li>
+                <li>Why it improves the baseline.</li>
+              </ul>
             </article>
 
             <article class="content-card">
@@ -143,6 +191,11 @@
                 Placeholder text for the second part of your method. Mention the
                 main operation, representation, or training objective.
               </p>
+              <ul class="fact-list compact-list">
+                <li>Core representation or module.</li>
+                <li>Loss, alignment, or optimization detail.</li>
+                <li>Any efficiency or robustness benefit.</li>
+              </ul>
             </article>
 
             <article class="content-card">
@@ -151,6 +204,11 @@
                 Placeholder text for the final part of your approach. This is also
                 a good place for implementation or efficiency notes.
               </p>
+              <ul class="fact-list compact-list">
+                <li>Inference or deployment note.</li>
+                <li>Data or training recipe summary.</li>
+                <li>Optional ablation hook.</li>
+              </ul>
             </article>
           </div>
 
@@ -231,16 +289,19 @@
           </p>
         </article>
 
-        <figure class="figure-card">
+        <div class="figure-card video-card">
           <img
             src="static/img/video-placeholder.svg"
             alt="Video placeholder poster"
           />
-          <figcaption>Replace with a video poster or embedded player.</figcaption>
-        </figure>
+          <p class="video-tip">
+            Later you can replace this image with an embedded iframe or HTML5
+            video player.
+          </p>
+        </div>
       </section>
 
-      <section class="section materials-section">
+      <section class="section materials-section" id="resources">
         <div class="section-heading">
           <p class="section-kicker">Resources</p>
           <h2>Common Links Readers Expect</h2>
@@ -266,6 +327,40 @@
         </div>
       </section>
 
+      <section class="section two-up">
+        <article class="content-card">
+          <p class="section-kicker">FAQ</p>
+          <h2>Common Questions Placeholder</h2>
+          <div class="faq-item">
+            <strong>When should this section be kept?</strong>
+            <p class="muted">
+              Keep it if your paper needs dataset clarifications, usage notes, or
+              release details that do not fit cleanly elsewhere.
+            </p>
+          </div>
+          <div class="faq-item">
+            <strong>What can go here?</strong>
+            <p class="muted">
+              Licensing, evaluation protocol, hardware budget, reproducibility
+              notes, or links to extra materials.
+            </p>
+          </div>
+        </article>
+
+        <article class="content-card">
+          <p class="section-kicker">Acknowledgement</p>
+          <h2>Credits And Support</h2>
+          <p>
+            Replace this with grant support, institutional resources, dataset
+            providers, or project collaborators if you want to expose them on the
+            page.
+          </p>
+          <p class="muted">
+            This block is optional. Delete it if the page should stay minimal.
+          </p>
+        </article>
+      </section>
+
       <section class="section two-up bottom-grid">
         <article class="content-card" id="citation">
           <p class="section-kicker">Citation</p>
@@ -287,8 +382,8 @@
             <a href="mailto:name@example.com">name@example.com</a>
           </p>
           <p class="muted">
-            Optional: add links to your personal homepage, Google Scholar, or lab
-            page here.
+            Optional: add links to your personal homepage, Google Scholar, GitHub,
+            or lab page here.
           </p>
         </article>
       </section>
