@@ -1,0 +1,15 @@
+<svg width="1200" height="920" viewBox="0 0 1200 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="920" rx="36" fill="#F8F1E5"/>
+  <rect x="70" y="70" width="1060" height="780" rx="28" fill="#FFFDF8" stroke="#1D2835" stroke-opacity="0.08" stroke-width="4"/>
+  <rect x="120" y="140" width="240" height="160" rx="20" fill="#DDEDEC"/>
+  <rect x="480" y="140" width="240" height="160" rx="20" fill="#F6D9C8"/>
+  <rect x="840" y="140" width="240" height="160" rx="20" fill="#E8F1F1"/>
+  <path d="M360 220H460" stroke="#0F5F66" stroke-width="10" stroke-linecap="round"/>
+  <path d="M720 220H820" stroke="#0F5F66" stroke-width="10" stroke-linecap="round"/>
+  <rect x="120" y="390" width="960" height="140" rx="24" fill="#EEF4F4"/>
+  <rect x="120" y="590" width="300" height="170" rx="24" fill="#F6D9C8"/>
+  <rect x="450" y="590" width="300" height="170" rx="24" fill="#DDEDEC"/>
+  <rect x="780" y="590" width="300" height="170" rx="24" fill="#E8F1F1"/>
+  <text x="120" y="820" fill="#0A4146" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700">Method Diagram Placeholder</text>
+  <text x="120" y="862" fill="#5F6F80" font-family="Trebuchet MS, Arial, sans-serif" font-size="22">Swap this with your architecture, algorithm flow, or training design figure.</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#F5EADB"/>
+  <rect x="60" y="60" width="1080" height="640" rx="30" fill="#FFFDF8" stroke="#1D2835" stroke-opacity="0.08" stroke-width="4"/>
+  <rect x="118" y="118" width="964" height="424" rx="24" fill="#E8F1F1"/>
+  <circle cx="600" cy="330" r="82" fill="#0F5F66"/>
+  <path d="M568 286L658 330L568 374V286Z" fill="#FFF9F0"/>
+  <rect x="118" y="580" width="520" height="62" rx="18" fill="#F6D9C8"/>
+  <rect x="664" y="580" width="418" height="62" rx="18" fill="#DDEDEC"/>
+  <text x="118" y="688" fill="#0A4146" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">Video Placeholder</text>
+  <text x="118" y="728" fill="#5F6F80" font-family="Trebuchet MS, Arial, sans-serif" font-size="22">Replace with a poster frame or embed a demo video later.</text>
+</svg>

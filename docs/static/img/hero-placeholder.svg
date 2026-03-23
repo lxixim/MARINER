@@ -1,0 +1,12 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="48" fill="#F3E8D8"/>
+  <rect x="64" y="64" width="1472" height="872" rx="32" fill="#FFF9F0" stroke="#0F5F66" stroke-opacity="0.15" stroke-width="4"/>
+  <rect x="126" y="126" width="620" height="748" rx="28" fill="#DDEDEC"/>
+  <rect x="788" y="126" width="686" height="174" rx="28" fill="#F6D9C8"/>
+  <rect x="788" y="340" width="686" height="258" rx="28" fill="#E8F1F1"/>
+  <rect x="788" y="638" width="214" height="236" rx="28" fill="#F6D9C8"/>
+  <rect x="1032" y="638" width="214" height="236" rx="28" fill="#DDEDEC"/>
+  <rect x="1276" y="638" width="198" height="236" rx="28" fill="#E8F1F1"/>
+  <text x="126" y="894" fill="#0A4146" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700">Teaser Figure Placeholder</text>
+  <text x="126" y="954" fill="#5F6F80" font-family="Trebuchet MS, Arial, sans-serif" font-size="30">Replace this image with your main qualitative result or summary visual.</text>
+</svg>
