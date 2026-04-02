@@ -1,399 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>[Paper Title] | Project Page</title>
-    <meta
-      name="description"
-      content="Placeholder academic project page for paper summary, figures, demo, and citation."
-    />
-    <meta name="theme-color" content="#0f5f66" />
-    <meta property="og:title" content="[Paper Title] | Project Page" />
-    <meta
-      property="og:description"
-      content="Placeholder academic project page for paper summary, figures, demo, and citation."
-    />
-    <link rel="stylesheet" href="static/css/style.css" />
-  </head>
-  <body>
-    <header class="hero-shell">
-      <div class="site-shell">
-        <div class="topbar">
-          <a class="brand" href="#top">MARINER</a>
-          <nav class="topnav" aria-label="Section navigation">
-            <a href="#abstract">Abstract</a>
-            <a href="#overview">Overview</a>
-            <a href="#method">Method</a>
-            <a href="#results">Results</a>
-            <a href="#resources">Resources</a>
-            <a href="#citation">Citation</a>
-          </nav>
-        </div>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="MARINER: A3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments">
+  <meta property="og:title" content="MARINER: A3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments"/>
+  <meta property="og:description" content="MARINER: A3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
-        <section class="hero" id="top">
-          <div class="hero-copy">
-            <p class="eyebrow">Project Page Placeholder</p>
-            <h1>[Paper Title Goes Here]</h1>
-            <p class="subtitle">
-              A one-sentence summary placeholder. Replace this with the core claim,
-              capability, or contribution of your paper.
-            </p>
 
-            <p class="authors">
-              First Author<sup>1</sup>, Second Author<sup>1</sup>, Third
-              Author<sup>2</sup>, Corresponding Author<sup>1</sup>
-            </p>
-            <p class="affiliations">
-              <sup>1</sup>Institution / Lab Name &nbsp; <sup>2</sup>Collaborating
-              Institution
-            </p>
-            <p class="venue">[Conference / Journal / arXiv / Under Review]</p>
-            <p class="paper-note">
-              Replace this header first: title, authors, affiliation, venue, and
-              the five resource buttons below.
-            </p>
+  <meta name="twitter:title" content="MARINER: A3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments">
+  <meta name="twitter:description" content="MARINER: A3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="MARINER, benchmark, open-water, fine-grained perception, complex reasoning, multimodal, A3E">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <div class="button-row">
-              <a class="button primary" href="#">Paper</a>
-              <a class="button" href="#">arXiv</a>
-              <a class="button" href="#">Code</a>
-              <a class="button" href="#">Dataset</a>
-              <a class="button" href="#">Demo Video</a>
-              <a class="button" href="#">Appendix</a>
+
+  <title>MARINER: A3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments</title>
+<!--  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">-->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+
+
+
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/lxixim">
+      <span class="icon">
+          <i class="fab fa-github"></i>
+      </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MARINER: A3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="mailto:liaoxingming@mails.gdut.edu.cn" target="_blank">Xingming Liao</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:18162195164@163.com" target="_blank">Ning Chen</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:shumuying8@gmail.com" target="_blank">Muying Shu</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:yypeng@mail2.gdut.edu.cn" target="_blank">YunPeng Yin</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:lil_ken@163.com" target="_blank">Peijian Zeng</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:zwwang@gdut.edu.cn" target="_blank">Zhuowei Wang</a><sup>1†</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:neakail@outlook.com" target="_blank">Nankai Lin</a><sup>1†</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="mailto:llcheng@gdut.edu.cn" target="_blank">Lianglun Cheng</a><sup>1</sup>
+                </span>
+              </div>
+
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Guangdong University of Technology, Guangzhou, China</span>
+                    <br>
+                    <span class="author-block">Preprint. Under review.</span>
+                    <br>
+                    <span class="eql-cntrb"><small><sup>†</sup>Corresponding Author</small></span>
+                  </div>
+
+
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                      <span class="link-block">
+                        <a href="#" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                         <!-- Appendix PDF link -->
+                      <span class="link-block">
+                        <a href="https://github.com/lxixim/MARINER/blob/main/Appendix/Appendix.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Appendix</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/lxixim/MARINER" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="#" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                      <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🤗</p>
+                  </span>
+                  <span>HuggingFace</span>
+
+                </a>
+              </span>
+
             </div>
-
-            <ul class="pill-list" aria-label="Project metadata">
-              <li>Year: 20XX</li>
-              <li>Task: Placeholder Task</li>
-              <li>Status: Draft</li>
-            </ul>
           </div>
-
-          <figure class="hero-media figure-card">
-            <img
-              src="static/img/hero-placeholder.svg"
-              alt="Teaser placeholder for the paper project page"
-            />
-            <figcaption>
-              Replace with your teaser figure, headline result, or animated GIF
-              cover.
-            </figcaption>
-          </figure>
-        </section>
+        </div>
       </div>
-    </header>
+    </div>
+  </div>
+</section>
 
-    <main class="site-shell">
-      <section class="section two-up" id="abstract">
-        <article class="content-card">
-          <p class="section-kicker">Abstract</p>
-          <h2>What This Paper Claims</h2>
+
+
+<!-- Teaser video-->
+<!--<section class="hero teaser">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="hero-body">-->
+<!--      <video poster="" id="tree" autoplay controls muted loop height="100%">-->
+<!--        &lt;!&ndash; Your video here &ndash;&gt;-->
+<!--        <source src="static/videos/banner_video.mp4"-->
+<!--        type="video/mp4">-->
+<!--      </video>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. -->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/overview.png" alt="MARINER overview" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem;">
+<!--       <h2 class="subtitle has-text-centered">
+        Overview of MARINER benchmark.
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
           <p>
-            This paragraph is a placeholder abstract. Summarize the problem,
-            explain your main idea, and highlight the outcome in two or three
-            sentences. If needed, replace this section with the exact abstract
-            from your paper.
-          </p>
-        </article>
-
-        <article class="content-card">
-          <p class="section-kicker">News</p>
-          <h2>Release Timeline Placeholder</h2>
-          <ul class="news-list">
-            <li><span>2026-03</span> Project page skeleton initialized.</li>
-            <li><span>20XX-XX</span> Add paper PDF and camera-ready citation.</li>
-            <li><span>20XX-XX</span> Release code repository or checkpoints.</li>
-            <li><span>20XX-XX</span> Add demo video, poster, or supplementary files.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="section highlight-grid">
-        <article class="content-card highlight-card">
-          <p class="section-kicker">Task</p>
-          <h3>Input To Output</h3>
-          <p>
-            Use one sentence to define the problem setup. This works well for
-            image-to-image, text-to-image, 3D reconstruction, retrieval, or agent
-            systems.
-          </p>
-        </article>
-
-        <article class="content-card highlight-card">
-          <p class="section-kicker">Contribution</p>
-          <h3>Main Technical Idea</h3>
-          <p>
-            State the central novelty in plain language before the reader reaches
-            the detailed method section.
-          </p>
-        </article>
-
-        <article class="content-card highlight-card">
-          <p class="section-kicker">Evidence</p>
-          <h3>Why It Matters</h3>
-          <p>
-            Mention the benchmark win, efficiency gain, human evaluation, or
-            qualitative leap that supports the paper.
-          </p>
-        </article>
-      </section>
-
-      <section class="section" id="overview">
-        <div class="section-heading">
-          <p class="section-kicker">Overview</p>
-          <h2>One Figure That Explains The Whole Story</h2>
-          <p>
-            Use this block for a teaser timeline, system overview, or benchmark
-            summary that helps readers understand the project quickly.
+            Fine-grained visual understanding and high-level reasoning in real world open-water environments remain under-explored due to the lack of dedicated benchmarks. We introduce MARINER, a comprehensive benchmark built under the novel Entity-Environment-Event (3E) paradigm. MARINER contains 16,629 multi-source maritime images with 63 fine-grained vessel categories, diverse adverse environments, and 5 typical dynamic maritime incidents, covering fine-grained classification, object detection, and visual question answering tasks. We conduct extensive evaluations on mainstream Multimodal Large Language Models (MLLMs) and establish baselines, revealing that even advanced models struggle with fine-grained discrimination and causal reasoning in complex marine scenes. As a dedicated maritime benchmark, MARINER fills the gap of realistic and cognitive-level evaluation for maritime multimodal understanding, and promotes future research on robust vision-language models for open-water applications.
           </p>
         </div>
-
-        <figure class="figure-card wide-figure">
-          <img
-            src="static/img/overview-placeholder.svg"
-            alt="Overview placeholder showing where the main figure will go"
-          />
-          <figcaption>
-            Suggested use: pipeline figure, task setting, or high-level comparison.
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="section split-section" id="method">
-        <div class="section-heading">
-          <p class="section-kicker">Method</p>
-          <h2>Break The Approach Into Two Or Three Clear Pieces</h2>
-          <p>
-            Readers typically skim this section. Keep the structure visual and use
-            short paragraphs or bullets.
-          </p>
-        </div>
-
-        <div class="split-layout">
-          <div class="stack">
-          <article class="content-card">
-              <h3>Component A</h3>
-              <p>
-                Placeholder text for the first part of your method. Explain the
-                motivation and what problem this module solves.
-              </p>
-              <ul class="fact-list compact-list">
-                <li>What goes in.</li>
-                <li>What transformation happens.</li>
-                <li>Why it improves the baseline.</li>
-              </ul>
-            </article>
-
-            <article class="content-card">
-              <h3>Component B</h3>
-              <p>
-                Placeholder text for the second part of your method. Mention the
-                main operation, representation, or training objective.
-              </p>
-              <ul class="fact-list compact-list">
-                <li>Core representation or module.</li>
-                <li>Loss, alignment, or optimization detail.</li>
-                <li>Any efficiency or robustness benefit.</li>
-              </ul>
-            </article>
-
-            <article class="content-card">
-              <h3>Component C</h3>
-              <p>
-                Placeholder text for the final part of your approach. This is also
-                a good place for implementation or efficiency notes.
-              </p>
-              <ul class="fact-list compact-list">
-                <li>Inference or deployment note.</li>
-                <li>Data or training recipe summary.</li>
-                <li>Optional ablation hook.</li>
-              </ul>
-            </article>
-          </div>
-
-          <figure class="figure-card">
-            <img
-              src="static/img/method-placeholder.svg"
-              alt="Method placeholder diagram"
-            />
-            <figcaption>
-              Replace with a model architecture, pipeline diagram, or training
-              setup figure.
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="section" id="results">
-        <div class="section-heading">
-          <p class="section-kicker">Results</p>
-          <h2>Mix Quantitative And Visual Evidence</h2>
-          <p>
-            This section is set up for two qualitative result panels plus one
-            compact metrics summary.
-          </p>
-        </div>
-
-        <div class="results-grid">
-          <figure class="figure-card">
-            <img
-              src="static/img/results-placeholder-a.svg"
-              alt="Qualitative results placeholder A"
-            />
-            <figcaption>Qualitative result panel A.</figcaption>
-          </figure>
-
-          <figure class="figure-card">
-            <img
-              src="static/img/results-placeholder-b.svg"
-              alt="Qualitative results placeholder B"
-            />
-            <figcaption>Qualitative result panel B.</figcaption>
-          </figure>
-
-          <article class="content-card metrics-card">
-            <p class="section-kicker">Metrics Snapshot</p>
-            <h3>Compact Table Placeholder</h3>
-            <div class="metric-row">
-              <span>Metric 1</span>
-              <strong>XX.X</strong>
-            </div>
-            <div class="metric-row">
-              <span>Metric 2</span>
-              <strong>YY.Y</strong>
-            </div>
-            <div class="metric-row">
-              <span>Metric 3</span>
-              <strong>ZZ.Z</strong>
-            </div>
-            <p class="muted">
-              Replace this card with a short table, ranking summary, or benchmark
-              notes if you do not want a full results table on the page.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section two-up">
-        <article class="content-card">
-          <p class="section-kicker">Demo</p>
-          <h2>Video Or Interactive Preview</h2>
-          <p>
-            If you later want to embed a YouTube or Bilibili video, replace the
-            placeholder figure on the right with an iframe or video element.
-          </p>
-          <p class="muted">
-            Suggested content: failure cases, ablations, user workflow, or real
-            time demo.
-          </p>
-        </article>
-
-        <div class="figure-card video-card">
-          <img
-            src="static/img/video-placeholder.svg"
-            alt="Video placeholder poster"
-          />
-          <p class="video-tip">
-            Later you can replace this image with an embedded iframe or HTML5
-            video player.
-          </p>
-        </div>
-      </section>
-
-      <section class="section materials-section" id="resources">
-        <div class="section-heading">
-          <p class="section-kicker">Resources</p>
-          <h2>Common Links Readers Expect</h2>
-        </div>
-
-        <div class="materials-grid">
-          <a class="resource-card" href="#">
-            <span class="resource-label">Paper PDF</span>
-            <strong>Upload camera-ready or preprint</strong>
-          </a>
-          <a class="resource-card" href="#">
-            <span class="resource-label">Code Repository</span>
-            <strong>Link training and inference code</strong>
-          </a>
-          <a class="resource-card" href="#">
-            <span class="resource-label">Dataset / Checkpoints</span>
-            <strong>Point to download page or release notes</strong>
-          </a>
-          <a class="resource-card" href="#">
-            <span class="resource-label">Supplementary Material</span>
-            <strong>Appendix, poster, slides, or FAQ</strong>
-          </a>
-        </div>
-      </section>
-
-      <section class="section two-up">
-        <article class="content-card">
-          <p class="section-kicker">FAQ</p>
-          <h2>Common Questions Placeholder</h2>
-          <div class="faq-item">
-            <strong>When should this section be kept?</strong>
-            <p class="muted">
-              Keep it if your paper needs dataset clarifications, usage notes, or
-              release details that do not fit cleanly elsewhere.
-            </p>
-          </div>
-          <div class="faq-item">
-            <strong>What can go here?</strong>
-            <p class="muted">
-              Licensing, evaluation protocol, hardware budget, reproducibility
-              notes, or links to extra materials.
-            </p>
-          </div>
-        </article>
-
-        <article class="content-card">
-          <p class="section-kicker">Acknowledgement</p>
-          <h2>Credits And Support</h2>
-          <p>
-            Replace this with grant support, institutional resources, dataset
-            providers, or project collaborators if you want to expose them on the
-            page.
-          </p>
-          <p class="muted">
-            This block is optional. Delete it if the page should stay minimal.
-          </p>
-        </article>
-      </section>
-
-      <section class="section two-up bottom-grid">
-        <article class="content-card" id="citation">
-          <p class="section-kicker">Citation</p>
-          <h2>BibTeX</h2>
-          <pre><code>@article{placeholder2026project,
-  title   = {Paper Title Goes Here},
-  author  = {First Author and Second Author and Third Author},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026}
-}</code></pre>
-        </article>
-
-        <article class="content-card">
-          <p class="section-kicker">Contact</p>
-          <h2>Project Maintainer</h2>
-          <p>
-            Name Surname<br />
-            Lab / University Name<br />
-            <a href="mailto:name@example.com">name@example.com</a>
-          </p>
-          <p class="muted">
-            Optional: add links to your personal homepage, Google Scholar, GitHub,
-            or lab page here.
-          </p>
-        </article>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-shell footer-inner">
-        <p>Built as a lightweight GitHub Pages skeleton for an academic project page.</p>
-        <p class="muted">Publishing tip: GitHub repository Settings -> Pages -> Deploy from branch -> main /docs.</p>
       </div>
-    </footer>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="hero is small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Dataset Construction</h2>
+      <p>
+        MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
+      </p>
+      <div class="columns is-centered" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+        <div class="column is-half">
+          <img src="static/images/1.png" alt="MARINER Entity-Environment-Event paradigm" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="column is-half">
+          <img src="static/images/3.png" alt="MARINER dataset statistics" style="width: 100%; border-radius: 10px;">
+        </div>
+      </div>
+      <p>
+        <b>Left:</b> Normalized performance comparison of MARINER and other models across the key metrics of the three benchmark tasks. <b>Right:</b> Distribution of the annotated instances within the MARINER, formulated specifically for the fine-grained classification and fine-grained detection tasks.
+      </p>
+      <br>
+      <p>
+        Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale. Cls., Det., and VQA denote classification, detection, and visual question answering, respectively. Multi-source denotes that the dataset is collected from open-source imagery, self-developed electro-optical pod platform and unmanned aerial vehicle.
+      </p>
+      <img src="static/images/5.png" alt="MARINER dataset comparison" style="width: 100%; max-height: 600px; object-fit: contain; border-radius: 10px; margin-top: 1rem; margin-bottom: 1.5rem; display: block; margin-left: auto; margin-right: auto;">
+    </div>
+  </div>
+</section>
+
+<!--<section class="section hero is-light">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="hero-body">-->
+<!--      <h2 class="title is-3">Results</h2>-->
+<!--      <p>-->
+<!--        SVGenius evaluates 22 diverse (M)LLMs across three SVG processing dimensions under a zero-shot setting, revealing significant capability disparities. Proprietary models lead overall but degrade sharply with rising complexity, while reasoning-enhanced training consistently outperforms pure scaling, especially in complex understanding and generation tasks. Open-source models exhibit scalability benefits but remain limited by architectural and training constraints. Specialized models show domain-specific strength but lack generalizability. Crucially, all models exhibit systematic degradation patterns, underscoring fundamental limitations in current approaches and highlighting the need for structure-aware, reasoning-rich training paradigms.-->
+<!--      </p>-->
+<!--      <img src="static/images/main-result.png" alt="Main experimental results of CoT-Bridge" style="width: 100%; max-height: 800px; object-fit: cover; border-radius: 10px; margin-bottom: 1.5rem;">-->
+<!--      <p>-->
+<!--        Main results (%) on mathematical benchmarks. MATH, GaoKao, Odyssey, and Olympiad correspond to the MATH500, GaoKao2023EN, MathOdyssey, and OlympiadBenchEN benchmarks, respectively. QwenBridger-S and QwenBridger-L represent zero-shot bridging based on Qwen2.5-Instruct-7B and Qwen2.5-Instruct-72B, respectively. CoT-Bridge-R stands for CoT-Bridge-Random.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+<!-- Image carousel-->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="container">
+      <h2 class="title is-3">Results</h2>
+      <p>
+        We conduct extensive evaluations on mainstream Multimodal Large Language Models (MLLMs) across MARINER's three core tasks: fine-grained vessel classification, object detection, and visual question answering. Our results reveal that even advanced models struggle with fine-grained discrimination and causal reasoning in complex marine scenes. Proprietary models generally outperform open-source counterparts, but all models show significant performance drops under adverse environmental conditions such as fog, rain, and low-light scenarios. These findings highlight the unique challenges posed by open-water environments and underscore the need for more robust vision-language models tailored to maritime applications.
+      </p>
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <img src="static/images/6.png" alt="MARINER detection results" style="max-width: 80%;"/>
+          <h2 class="subtitle has-text-centered" style="max-width: 80%; margin-top: 1rem;">
+            Detection performance comparison of different models. Best performances for open-source models are highlighted in bold. GPT-series models do not report results on military vessel categories, due to safety constraints related to military-target recognition.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <img src="static/images/7.png" alt="MARINER VQA results" style="max-width: 80%;"/>
+          <h2 class="subtitle has-text-centered" style="max-width: 80%; margin-top: 1rem;">
+            Results of different models on various task types in the VQA benchmark. The evaluation is reported across three major dimensions, including Perception, Space, and Reasoning. Best performances for open-source models are highlighted in bold.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <img src="static/images/8.png" alt="MARINER classification results" style="max-width: 80%;"/>
+          <h2 class="subtitle has-text-centered" style="max-width: 80%; margin-top: 1rem;">
+            Classification performance comparison of different models. Best performances for open-source models are highlighted in bold.
+          </h2>
+        </div>
+
+  </div>
+</div>
+</div>
+</section>
+
+<!-- End image carousel -->
+
+
+
+
+<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <h2 class="title is-3">Video Presentation</h2>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-four-fifths">-->
+<!--          -->
+<!--          <div class="publication-video">-->
+<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
+
+
+<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title is-3">Another Carousel</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-video1">-->
+<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel1.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video2">-->
+<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel2.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video3">-->
+<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel3.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
+
+
+
+
+
+
+<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+
+
+<!--BibTex citation -->
+<!--  <section class="section" id="BibTeX">-->
+<!--    <div class="container is-max-desktop content">-->
+<!--      <h2 class="title">BibTeX</h2>-->
+<!--      <pre><code>@misc{xu2025mindgapbridgingthought,-->
+<!--      title={SVGenius: Benchmarking LLMs in SVG Understanding, Editing and Generation},-->
+<!--      author={Haolei Xu and Yuchen Yan and Yongliang Shen and Wenqi Zhang and Guiyang Hou and Shengpei Jiang and Kaitao Song and Weiming Lu and Jun Xiao and Yueting Zhuang},-->
+<!--      year={2025},-->
+<!--      eprint={2505.14684},-->
+<!--      archivePrefix={arXiv},-->
+<!--      primaryClass={cs.CL},-->
+<!--      url={https://arxiv.org/abs/2505.14684},-->
+<!--}</code></pre>-->
+<!--    </div>-->
+<!--</section>-->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+      @misc{liao2025mariner,
+      title={MARINER: A3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments},
+      author={Xingming Liao and Ning Chen and Muying Shu and YunPeng Yin and Peijian Zeng and Zhuowei Wang and Nankai Lin and Lianglun Cheng},
+      year={2025},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
   </body>
   </html>
