@@ -8,27 +8,126 @@ MARINER evaluates Multimodal Large Language Models (MLLMs) across three progress
 
 Comparison of MARINER with existing multimodal maritime benchmarks.
 
-\begin{table*}[t]
-\centering
-\caption{Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale. Cls., Det., and VQA denote classification, detection, and visual question answering, respectively. Multi-source denotes that the dataset is collected from open-source imagery, self-developed electro-optical pod platform and unmanned aerial vehicle.}
-\label{tab:datasets}
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{l p{2.2cm} c c c c c c c c}
-\toprule
-\textbf{Name} & \textbf{Source} & \textbf{Categories} & \textbf{Environment} & \textbf{Event} & \textbf{Cls.} & \textbf{Det.} & \textbf{VQA} & \textbf{Images} & \textbf{Instances} \\
-\midrule
-MS COCO \cite{lin2014microsoft}   & Open-source   & 1  & Limited  & Static  & \xmark & \cmark & \xmark & 3,164  & 11,189  \\
-SeaShip \cite{shao2018seaships}   & Shore-based   & 6  & Limited  & Static  & \cmark & \cmark & \xmark & 31,455 & 40,077  \\
-Boat Re-ID \cite{spagnolo2019new} & Shore-based   & - & Limited  & Static  & \cmark & \xmark & \xmark & 5,523  & 5,523   \\
-McShips \cite{zheng2020mcships}   & Open-source   & 13 & Diverse  & Static  & \cmark & \cmark & \xmark & 14,709 & 26,529  \\
-ABOships \cite{iancu2021aboships} & Shipboard     & 9  & Limited  & Limited & \cmark & \cmark & \xmark & 9,880  & 41,967  \\
-SeaSAw \cite{kaur2022sea}         & Shipboard     & 12 & Diverse  & Dynamic & \cmark & \cmark & \xmark & 1.9M   & 14.6M   \\
-IFShip \cite{guo2025ifship}       & Open-source   & 17 & Moderate & Static  & \cmark & \xmark & \cmark & 18,929 & -  \\
-\midrule
-\textbf{MARINER (Ours)} & \textbf{Multi-source} & \textbf{63} & \textbf{Diverse} & \textbf{Dynamic} & \textbf{\cmark} & \textbf{\cmark} & \textbf{\cmark} & \textbf{16,629} & \textbf{17,895} \\
-\bottomrule
-\end{tabular}
-\end{table*}
+<table class="dataset-comparison" style="width: 100%; border-collapse: collapse; font-size: 0.95em; margin: 20px 0;">
+  <caption style="font-weight: bold; margin-bottom: 10px; caption-side: top;">
+    Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale. 
+    Cls., Det., and VQA denote classification, detection, and visual question answering, respectively. 
+    Multi-source denotes that the dataset is collected from open-source imagery, self-developed electro-optical pod platform and unmanned aerial vehicle.
+  </caption>
+  <thead>
+    <tr style="background-color: #f0f0f0;">
+      <th style="padding: 8px; text-align: left; border: 1px solid #ddd;">Name</th>
+      <th style="padding: 8px; text-align: left; border: 1px solid #ddd;">Source</th>
+      <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Categories</th>
+      <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Environment</th>
+      <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Event</th>
+      <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Cls.</th>
+      <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Det.</th>
+      <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">VQA</th>
+      <th style="padding: 8px; text-align: right; border: 1px solid #ddd;">Images</th>
+      <th style="padding: 8px; text-align: right; border: 1px solid #ddd;">Instances</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #ddd;">MS COCO <sup>[1]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Open-source</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">1</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Static</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">3,164</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">11,189</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #ddd;">SeaShip <sup>[2]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Shore-based</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">6</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Static</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">31,455</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">40,077</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #ddd;">Boat Re-ID <sup>[3]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Shore-based</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">–</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Static</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">5,523</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">5,523</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #ddd;">McShips <sup>[4]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Open-source</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">13</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Diverse</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Static</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">14,709</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">26,529</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #ddd;">ABOships <sup>[5]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Shipboard</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">9</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">9,880</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">41,967</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #ddd;">SeaSAw <sup>[6]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Shipboard</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">12</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Diverse</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Dynamic</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">1.9M</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">14.6M</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #ddd;">IFShip <sup>[7]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Open-source</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">17</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Moderate</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Static</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✗</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">18,929</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">–</td>
+    </tr>
+    <tr style="background-color: #e6f2ff; font-weight: bold;">
+      <td style="padding: 6px; border: 1px solid #ddd;">MARINER (Ours)</td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Multi-source</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">63</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Diverse</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Dynamic</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">✓</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">16,629</td>
+      <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">17,895</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## 先改哪里
 
