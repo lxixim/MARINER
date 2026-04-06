@@ -40,7 +40,19 @@ Comparison of ship-related datasets in terms of source diversity, category scale
 ## ✨ Data Construct
 
 MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
-<img src="imgs/datasets.jpg" alt="datasets" style="width:100%; max-width:800px; height:auto;">
+<div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; max-width: 1400px; margin: 2rem auto;">
+  <!-- 左图：雷达图 -->
+  <div style="flex: 1; min-width: 500px;">
+    <img src="imgs/all_radar.png" alt="MARINER Benchmark Radar Chart" 
+         style="width: 100%; max-width: 550px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+  </div>
+
+  <!-- 右图：环形分类图 -->
+  <div style="flex: 1; min-width: 500px;">
+    <img src="imgs/category.png" alt="MARINER Ship Category Distribution" 
+         style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+  </div>
+</div>
 
 ## 图片替换建议
 
