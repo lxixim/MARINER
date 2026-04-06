@@ -1,6 +1,7 @@
 # MARINER: A 3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments
 
-🎉 数据集与代码现已全面开放！
+## 🔥🔥🔥 News !!
+[2026/04/06] 
 <a href="https://lxixim.github.io/MARINER/" 
    target="_blank" 
    rel="noopener noreferrer"
