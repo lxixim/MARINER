@@ -42,24 +42,18 @@ Comparison of ship-related datasets in terms of source diversity, category scale
 MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 <div class="columns is-centered" style="margin: 2rem 0;">
-  <!-- 左图 -->
-  <div class="column is-half-desktop is-full-mobile">
-    <div class="box" style="text-align: center; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden;">
-      <img src="imgs/all_radar.png"
-           alt="MARINER Radar Chart"
-           style="width: 100%; height: auto; max-height: 550px; object-fit: contain;">
-    </div>
+  <div class="column is-half-desktop">
+    <figure class="image is-4by3">
+      <img src="imgs/radar.png" alt="Radar Chart" style="object-fit: contain; width:100%; height:100%;">
+    </figure>
   </div>
-
-  <!-- 右图 -->
-  <div class="column is-half-desktop is-full-mobile">
-    <div class="box" style="text-align: center; padding: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden;">
-      <img src="imgs/category.png"
-           alt="MARINER Ship Categories"
-           style="width: 100%; height: auto; max-height: 550px; object-fit: contain;">
-    </div>
+  <div class="column is-half-desktop">
+    <figure class="image is-4by3">
+      <img src="imgs/sunburst.png" alt="Sunburst Chart" style="object-fit: contain; width:100%; height:100%;">
+    </figure>
   </div>
 </div>
+
 ## 图片替换建议
 
 当前占位图文件如下：
