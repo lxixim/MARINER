@@ -41,12 +41,47 @@ Comparison of ship-related datasets in terms of source diversity, category scale
 
 MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-<div style="display:flex; gap:1.5rem; justify-content:center; max-width:1400px; margin:2rem auto;">
-  <div style="flex:1; min-width:480px; max-width:650px;">
-    <img src="imgs/all_radar.png" style="width:100%; height:520px; object-fit:contain; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+<div style="
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: nowrap;        /* 关键！禁止换行 */
+  max-width: 1400px;
+  margin: 2rem auto;
+  overflow-x: auto;         /* 防止超宽时隐藏内容（可选） */
+">
+  <!-- 左图：固定宽度，不依赖 flex 帆布 -->
+  <div style="
+    width: 600px;           /* 硬编码宽度，确保可预测 */
+    flex: 0 0 auto;         /* 不伸缩、不收缩、按 width 计算 */
+    min-width: 0;           /* 防止 flex 强制最小宽度 */
+  ">
+    <img src="imgs/all_radar.png"
+         alt="Radar Chart"
+         style="
+           width: 100%;
+           height: 520px;
+           object-fit: contain;
+           border-radius: 8px;
+           box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+         ">
   </div>
-  <div style="flex:1; min-width:480px; max-width:650px;">
-    <img src="imgs/category.png" style="width:100%; height:520px; object-fit:contain; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+
+  <!-- 右图：同上 -->
+  <div style="
+    width: 600px;
+    flex: 0 0 auto;
+    min-width: 0;
+  ">
+    <img src="imgs/category.png"
+         alt="Category Chart"
+         style="
+           width: 100%;
+           height: 520px;
+           object-fit: contain;
+           border-radius: 8px;
+           box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+         ">
   </div>
 </div>
 
