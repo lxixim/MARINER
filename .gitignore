@@ -49,4 +49,7 @@ htmlcov/
 .cursorrules
 .cursorignore
 .claude/MARINER/
-Appendix/
+
+MARINER/
+
+.claude/
