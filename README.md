@@ -3,25 +3,20 @@
 ## 🔥🔥🔥 News !!
  <ul style="padding-left: 1.2em; margin: 0 0 1.8em 0; list-style: none;">
     <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
-      <span style="color: #666; font-size: 0.9em;">[2025/08/01]</span>
-      <span>🎉</span>
-      <span>We are happy our paper was accepted to ACM MM 2025.</span>
-    </li>
-    <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
       <span style="color: #666; font-size: 0.9em;">[2025/05/30]</span>
-      <span>📦</span>
+      <span>👋</span>
       <span>Release Datasets. 
         <a href="https://lxixim.github.io/MARINER/" 
            target="_blank" 
            rel="noopener noreferrer"
            style="color: #1a73e8; text-decoration: none; font-weight: 500;">
-          Dataset.
+          🤗 Dataset.
         </a>
       </span>
     </li>
     <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
       <span style="color: #666; font-size: 0.9em;">[2025/05/30]</span>
-      <span>📄</span>
+      <span>👋</span>
       <span>Unupload paper. 
         <a href="https://arxiv.org/abs/XXXX.XXXXX" 
            target="_blank" 
@@ -31,25 +26,7 @@
         </a>
       </span>
     </li>
-    <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
-      <span style="color: #666; font-size: 0.9em;">[2025/05/31]</span>
-      <span>💻</span>
-      <span>Release the evaluation code. 
-        <a href="https://github.com/lxixim/MARINER" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           style="color: #1a73e8; text-decoration: none; font-weight: 500;">
-          Code
-        </a>
-      </span>
-    </li>
   </ul>
-<a href="https://lxixim.github.io/MARINER/" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   style="display: inline-block; padding: 10px 20px; background-color: #1e88e5; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">
-  🚢 探索 MARINER 数据集
-</a>
 
 
 ## 🌟 Overview
