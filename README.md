@@ -6,13 +6,10 @@ MARINER evaluates Multimodal Large Language Models (MLLMs) across three progress
 
 <img src="imgs/case_ship.png" alt="case_ship" style="width:100%; max-width:800px; height:auto;">
 
-Comparison of MARINER with existing multimodal maritime benchmarks.
-
+<div style="display: flex; justify-content: center; overflow-x: auto; padding: 10px 0;">
 <table class="dataset-comparison" style="width: 100%; border-collapse: collapse; font-size: 0.95em; margin: 20px 0;">
   <caption style="font-weight: bold; margin-bottom: 10px; caption-side: top;">
     Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale. 
-    Cls., Det., and VQA denote classification, detection, and visual question answering, respectively. 
-    Multi-source denotes that the dataset is collected from open-source imagery, self-developed electro-optical pod platform and unmanned aerial vehicle.
   </caption>
   <thead>
     <tr style="background-color: #f0f0f0;">
