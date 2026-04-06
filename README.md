@@ -40,7 +40,7 @@ Comparison of ship-related datasets in terms of source diversity, category scale
 ## ✨ Data Construct
 
 MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
 <img src="imgs/datasets.png" alt="Comparison of ship-related datasets" style="width:100%; max-width:800px; height:auto;">
 
 ## 图片替换建议
