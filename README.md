@@ -18,7 +18,7 @@ MARINER evaluates Multimodal Large Language Models (MLLMs) across three progress
 
 当前占位图文件如下：
 
-- `docs/static/img/hero-placeholder.svg`
+- `imgs/all_radar.png`
 - `docs/static/img/overview-placeholder.svg`
 - `docs/static/img/method-placeholder.svg`
 - `docs/static/img/results-placeholder-a.svg`
