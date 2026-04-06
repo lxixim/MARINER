@@ -7,7 +7,7 @@ MARINER evaluates Multimodal Large Language Models (MLLMs) across three progress
 <img src="imgs/case_ship.png" alt="case_ship" style="width:100%; max-width:800px; height:auto;">
 
 <div style="display: flex; justify-content: center; overflow-x: auto; padding: 10px 0;">
-<table class="dataset-comparison" style="width: 100%; border-collapse: collapse; font-size: 0.95em; margin: 20px 0;">
+<table class="dataset-comparison" style="width: fit-content; border-collapse: collapse; font-size: 0.95em; margin: 20px 0;">
   <caption style="font-weight: bold; margin-bottom: 10px; caption-side: top;">
     Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale. 
   </caption>
