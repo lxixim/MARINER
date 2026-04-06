@@ -6,7 +6,7 @@
       <span style="color: #666; font-size: 0.9em;">[2026/04/06]</span>
       <span>👋</span>
       <span>Release Datasets. 
-        <a href="https://lxixim.github.io/MARINER/" 
+        <a href="[https://lxixim.github.io/MARINER/](https://huggingface.co/datasets/lxixim/MARINER)" 
            target="_blank" 
            rel="noopener noreferrer"
            style="color: #1a73e8; text-decoration: none; font-weight: 500;">
