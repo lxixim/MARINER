@@ -6,19 +6,10 @@ MARINER evaluates Multimodal Large Language Models (MLLMs) across three progress
 
 <img src="imgs/case_ship.png" alt="case_ship" style="width:100%; max-width:800px; height:auto;">
 
-<div style="
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  overflow-x: auto; /* 横向滚动（可选，防溢出） */
-">
-  <img src="imgs/all_radar.png" 
-       alt="Radar Chart" 
-       style="max-width: 48%; height: auto; min-width: 300px;">
-  <img src="imgs/category.png" 
-       alt="Category" 
-       style="max-width: 48%; height: auto; min-width: 300px;">
+
+<div style="display: flex; gap: 20px; justify-content: center; width: 100%; overflow-x: auto;">
+  <img src="imgs/all_radar.png" alt="Radar Chart" style="max-width: 48%; height: auto; min-width: 320px;">
+  <img src="imgs/category.png" alt="Category" style="max-width: 48%; height: auto; min-width: 320px;">
 </div>
 
 ## 先改哪里
