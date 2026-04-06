@@ -1,5 +1,13 @@
 # MARINER: A 3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments
 
+<a href="https://lxixim.github.io/MARINER/" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   style="display: inline-block; padding: 10px 20px; background-color: #1e88e5; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">
+  🚢 探索 MARINER 数据集
+</a>
+
+
 ## 🌟 Overview
 
 MARINER evaluates Multimodal Large Language Models (MLLMs) across three progressive dimensions: Perception (fine-grained classification, object detection), Spatial Understanding (viewpoint estimation, spatial relationships), and Reasoning (environmental state inference, operational status judgment). Built upon an innovative "Entity-Environment-Event" (3E) paradigm, this benchmark comprises 16,629 images from diverse sources, covering 63 fine-grained vessel categories, 4 types of harsh weather conditions, and 5 typical dynamic maritime events. MARINER provides a comprehensive evaluation of mainstream MLLMs through 3 task categories and multiple metrics, revealing that even state-of-the-art models face significant challenges in performing fine-grained discrimination and causal reasoning within complex maritime scenarios.
