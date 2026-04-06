@@ -41,16 +41,12 @@ Comparison of ship-related datasets in terms of source diversity, category scale
 
 MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-<div class="columns is-centered" style="margin: 2rem 0;">
-  <div class="column is-half-desktop">
-    <div style="box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden;">
-      <canvas id="radarCanvas" width="600" height="500"></canvas>
-    </div>
+<div style="display:flex; gap:1.5rem; justify-content:center; max-width:1400px; margin:2rem auto;">
+  <div style="flex:1; min-width:480px; max-width:650px;">
+    <img src="imgs/all_radar.png" style="width:100%; height:520px; object-fit:contain; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
   </div>
-  <div class="column is-half-desktop">
-    <div style="box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden;">
-      <canvas id="categoryCanvas" width="600" height="500"></canvas>
-    </div>
+  <div style="flex:1; min-width:480px; max-width:650px;">
+    <img src="imgs/category.png" style="width:100%; height:520px; object-fit:contain; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
   </div>
 </div>
 
