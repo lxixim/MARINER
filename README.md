@@ -1,8 +1,6 @@
 # MARINER: A 3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments
 
-这是一个纯静态的论文展示页骨架，适合直接部署到 GitHub Pages。
-
-## 目录结构
+## 🌟 Overview  🌟 概述
 
 - `docs/index.html`
   页面主体，标题、作者、摘要、方法、结果、资源链接、BibTeX 都在这里改。
