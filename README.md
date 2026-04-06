@@ -30,7 +30,7 @@ Comparison of MARINER with existing multimodal maritime benchmarks.
   </thead>
   <tbody>
     <tr>
-      <td style="padding: 6px; border: 1px solid #ddd;">MS COCO <sup>[1]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">MS COCO <sup></sup></td>
       <td style="padding: 6px; border: 1px solid #ddd;">Open-source</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">1</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
@@ -42,7 +42,7 @@ Comparison of MARINER with existing multimodal maritime benchmarks.
       <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">11,189</td>
     </tr>
     <tr>
-      <td style="padding: 6px; border: 1px solid #ddd;">SeaShip <sup>[2]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">SeaShip <sup></sup></td>
       <td style="padding: 6px; border: 1px solid #ddd;">Shore-based</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">6</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
@@ -54,7 +54,7 @@ Comparison of MARINER with existing multimodal maritime benchmarks.
       <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">40,077</td>
     </tr>
     <tr>
-      <td style="padding: 6px; border: 1px solid #ddd;">Boat Re-ID <sup>[3]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">Boat Re-ID <sup></sup></td>
       <td style="padding: 6px; border: 1px solid #ddd;">Shore-based</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">–</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
@@ -66,7 +66,7 @@ Comparison of MARINER with existing multimodal maritime benchmarks.
       <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">5,523</td>
     </tr>
     <tr>
-      <td style="padding: 6px; border: 1px solid #ddd;">McShips <sup>[4]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">McShips <sup></sup></td>
       <td style="padding: 6px; border: 1px solid #ddd;">Open-source</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">13</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Diverse</td>
@@ -78,7 +78,7 @@ Comparison of MARINER with existing multimodal maritime benchmarks.
       <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">26,529</td>
     </tr>
     <tr>
-      <td style="padding: 6px; border: 1px solid #ddd;">ABOships <sup>[5]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">ABOships <sup></sup></td>
       <td style="padding: 6px; border: 1px solid #ddd;">Shipboard</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">9</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Limited</td>
@@ -90,7 +90,7 @@ Comparison of MARINER with existing multimodal maritime benchmarks.
       <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">41,967</td>
     </tr>
     <tr>
-      <td style="padding: 6px; border: 1px solid #ddd;">SeaSAw <sup>[6]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">SeaSAw <sup></sup></td>
       <td style="padding: 6px; border: 1px solid #ddd;">Shipboard</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">12</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Diverse</td>
@@ -102,7 +102,7 @@ Comparison of MARINER with existing multimodal maritime benchmarks.
       <td style="padding: 6px; text-align: right; border: 1px solid #ddd;">14.6M</td>
     </tr>
     <tr>
-      <td style="padding: 6px; border: 1px solid #ddd;">IFShip <sup>[7]</sup></td>
+      <td style="padding: 6px; border: 1px solid #ddd;">IFShip <sup></sup></td>
       <td style="padding: 6px; border: 1px solid #ddd;">Open-source</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">17</td>
       <td style="padding: 6px; text-align: center; border: 1px solid #ddd;">Moderate</td>
