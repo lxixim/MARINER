@@ -6,6 +6,9 @@ MARINER evaluates Multimodal Large Language Models (MLLMs) across three progress
 
 <img src="imgs/case_ship.png" alt="case_ship" style="width:100%; max-width:800px; height:auto;">
 
+Comparison of MARINER with existing multimodal maritime benchmarks.
+
+
 ## 先改哪里
 
 优先改这些位置：
