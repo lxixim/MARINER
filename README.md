@@ -2,14 +2,7 @@
 
 ## 🌟 Overview  🌟 概述
 
-- `docs/index.html`
-  页面主体，标题、作者、摘要、方法、结果、资源链接、BibTeX 都在这里改。
-- `docs/static/css/style.css`
-  页面样式。
-- `docs/static/img/`
-  所有占位图都在这里，后面直接用你的真实图片替换即可。
-- `docs/.nojekyll`
-  让 GitHub Pages 按静态文件方式直接发布。
+MARINER evaluates Multimodal Large Language Models (MLLMs) across three progressive dimensions: Perception (fine-grained classification, object detection), Spatial Understanding (viewpoint estimation, spatial relationships), and Reasoning (environmental state inference, operational status judgment). Built upon an innovative "Entity-Environment-Event" (3E) paradigm, this benchmark comprises 16,629 images from diverse sources, covering 63 fine-grained vessel categories, 4 types of harsh weather conditions, and 5 typical dynamic maritime events. MARINER provides a comprehensive evaluation of mainstream MLLMs through 3 task categories and multiple metrics, revealing that even state-of-the-art models face significant challenges in performing fine-grained discrimination and causal reasoning within complex maritime scenarios.
 
 ## 先改哪里
 
