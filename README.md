@@ -8,6 +8,27 @@ MARINER evaluates Multimodal Large Language Models (MLLMs) across three progress
 
 Comparison of MARINER with existing multimodal maritime benchmarks.
 
+\begin{table*}[t]
+\centering
+\caption{Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale. Cls., Det., and VQA denote classification, detection, and visual question answering, respectively. Multi-source denotes that the dataset is collected from open-source imagery, self-developed electro-optical pod platform and unmanned aerial vehicle.}
+\label{tab:datasets}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{l p{2.2cm} c c c c c c c c}
+\toprule
+\textbf{Name} & \textbf{Source} & \textbf{Categories} & \textbf{Environment} & \textbf{Event} & \textbf{Cls.} & \textbf{Det.} & \textbf{VQA} & \textbf{Images} & \textbf{Instances} \\
+\midrule
+MS COCO \cite{lin2014microsoft}   & Open-source   & 1  & Limited  & Static  & \xmark & \cmark & \xmark & 3,164  & 11,189  \\
+SeaShip \cite{shao2018seaships}   & Shore-based   & 6  & Limited  & Static  & \cmark & \cmark & \xmark & 31,455 & 40,077  \\
+Boat Re-ID \cite{spagnolo2019new} & Shore-based   & - & Limited  & Static  & \cmark & \xmark & \xmark & 5,523  & 5,523   \\
+McShips \cite{zheng2020mcships}   & Open-source   & 13 & Diverse  & Static  & \cmark & \cmark & \xmark & 14,709 & 26,529  \\
+ABOships \cite{iancu2021aboships} & Shipboard     & 9  & Limited  & Limited & \cmark & \cmark & \xmark & 9,880  & 41,967  \\
+SeaSAw \cite{kaur2022sea}         & Shipboard     & 12 & Diverse  & Dynamic & \cmark & \cmark & \xmark & 1.9M   & 14.6M   \\
+IFShip \cite{guo2025ifship}       & Open-source   & 17 & Moderate & Static  & \cmark & \xmark & \cmark & 18,929 & -  \\
+\midrule
+\textbf{MARINER (Ours)} & \textbf{Multi-source} & \textbf{63} & \textbf{Diverse} & \textbf{Dynamic} & \textbf{\cmark} & \textbf{\cmark} & \textbf{\cmark} & \textbf{16,629} & \textbf{17,895} \\
+\bottomrule
+\end{tabular}
+\end{table*}
 
 ## 先改哪里
 
