@@ -83,7 +83,7 @@ MARINER/
 This section demonstrates how to use our evaluation script to test different tasks. Here we take the MARINER classification task as an example.
 ```bash
 # Clone the repository
-git clone [https://github.com/lxixim/MARINER.git](https://github.com/lxixim/MARINER.git)
+git clone https://github.com/lxixim/MARINER.git
 cd MARINER
 
 # Create a new environment
