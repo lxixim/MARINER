@@ -17,14 +17,13 @@
     <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
       <span style="color: #666; font-size: 0.9em;">[2026/04/06]</span>
       <span>👋</span>
-      <span>Datasets: The training dataset requires application for access due to project requirements. The 
+      <span>Datasets: The training dataset requires application for access due to project requirements. The test dataset is publicly available at logo Test Dataset.
         <a href="https://huggingface.co/datasets/lxixim/MARINER" 
            target="_blank" 
            rel="noopener noreferrer"
            style="color: #1a73e8; text-decoration: none; font-weight: 500;">
           🤗Test Dataset.
-        </a>
-       is publicly available at logo Test Dataset. 
+        </a> 
       </span>
     </li>
     <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
