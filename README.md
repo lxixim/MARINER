@@ -97,6 +97,7 @@ pip install -r requirements.txt
 ```
 
 **II. Download the dataset.**
+
 Download the dataset from our HuggingFace repository.
 
 ```bash
@@ -105,7 +106,21 @@ git clone https://huggingface.co/datasets/viviwang/MARINER
 ```
 
 **III. Classification task training.**
+
+Train a classification model.
+
 ```bash
-# Download the dataset from Hugging Face.
-git clone https://huggingface.co/datasets/viviwang/MARINER
+python your_script_name.py \
+    --model_name "Qwen2.5-VL-7B-Instruct" \
+    --model_root "<PATH_TO_MODELS_FOLDER>" \
+    --image_root "<PATH_TO_YOUR_TRAINING_IMAGES>" \
+    --json_root "<PATH_TO_YOUR_ANNOTATION_JSON_FOLDER>" \
+    --output_root "<PATH_TO_SAVE_CHECKPOINTS>" \
+    --lora_r 64 \
+    --lora_alpha 128 \
+    --num_train_epochs 3 \
+    --per_device_train_batch_size 4 \
+    --gradient_accumulation_steps 8 \
+    --learning_rate 2e-5 \
+    --max_length 2048
 ```
