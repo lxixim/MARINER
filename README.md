@@ -77,6 +77,7 @@ MARINER/
 ├── 📄evaluate_classify.py      # Classification task evaluation code
 ├── 📄requirements.txt     # Dependencies for evaluation
 └── 📄README.md
-
+```
 
 ## 🧪 Usage
+This section demonstrates how to use our evaluation script to test different tasks. Here we take the MARINER classification task as an example.
