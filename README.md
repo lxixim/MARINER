@@ -124,3 +124,19 @@ python your_script_name.py \
     --learning_rate 2e-5 \
     --max_length 2048
 ```
+
+**IV. Classification task reasoning.**
+
+Inference for a classification task.
+
+```bash
+python inference_classify.py
+```
+
+**V. Classification task evaluation.**
+
+Evaluation for a classification task.
+
+```bash
+python evaluate_classify.py
+```
