@@ -10,7 +10,7 @@
            target="_blank" 
            rel="noopener noreferrer"
            style="color: #1a73e8; text-decoration: none; font-weight: 500;">
-          🤗 Appendix.
+           Appendix.
         </a>
       </span>
     </li>
