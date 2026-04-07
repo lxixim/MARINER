@@ -87,7 +87,7 @@ git clone https://github.com/lxixim/MARINER.git
 cd MARINER
 
 # Create a new environment
-conda create -n mariner python=3.10
+conda create -n mariner python==3.10
 conda activate mariner
 
 # Install dependencies
