@@ -55,3 +55,10 @@ Comparison of ship-related datasets in terms of source diversity, category scale
 MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
 
 <img src="imgs/datasets.png" alt="Comparison of ship-related datasets" style="width:100%; max-width:800px; height:auto;">
+
+## 📊 Benchmark Statistics
+Experimental SetupModel Evaluation. A diverse set of Multimodal Large Language Models (MLLMs) is evaluated on MARINER to assess maritime fine-grained perception and reasoning capabilities across various architectures, scales, and training paradigms. The evaluation encompasses the following model categories:
+Proprietary Models: Advanced private models, including GPT-4o, GPT-4.1, Gemini-2.5-Flash, and Gemini-2.5-Pro-Thinking, are included to establish performance upper bounds.
+Open-Source Models: Extensive evaluations are conducted on 16 representative models with parameters ranging from 1.5B to 72B, such as Qwen2.5-VL, InternVL2/3, MiniCPM-V-2.6, and LLaVA-OneVision.
+Task-Specific Baselines: The proposed MARINER-7B model is benchmarked against scale-matched open-source variants to demonstrate the effectiveness of domain-specific adaptation.
+Detailed evaluation metrics for the three core tasks—classification, detection, and VQA—along with additional implementation details, are provided in the Appendix.
