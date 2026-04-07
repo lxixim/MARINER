@@ -96,3 +96,4 @@ conda activate mariner
 pip install -r requirements.txt
 ```
 
+**II. Download the dataset.**
