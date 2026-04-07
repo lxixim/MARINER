@@ -81,3 +81,15 @@ MARINER/
 
 ## 🧪 Usage
 This section demonstrates how to use our evaluation script to test different tasks. Here we take the MARINER classification task as an example.
+```bash
+# Clone the repository
+git clone [https://github.com/lxixim/MARINER.git](https://github.com/lxixim/MARINER.git)
+cd MARINER
+
+# Create a new environment
+conda create -n mariner python=3.10
+conda activate mariner
+
+# Install dependencies
+pip install -r requirements.txt
+```
