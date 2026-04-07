@@ -22,9 +22,9 @@
            target="_blank" 
            rel="noopener noreferrer"
            style="color: #1a73e8; text-decoration: none; font-weight: 500;">
-          🤗 Dataset.
+          🤗Test Dataset.
         </a>
-       (Due to project requirements, the training set needs to be applied for.)
+       Due to project requirements, the training set needs to be applied for.
       </span>
     </li>
     <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
