@@ -97,3 +97,15 @@ pip install -r requirements.txt
 ```
 
 **II. Download the dataset.**
+Download the dataset from our HuggingFace repository.
+
+```bash
+# Download the dataset from Hugging Face.
+git clone https://huggingface.co/datasets/viviwang/MARINER
+```
+
+**III. Classification task training.**
+```bash
+# Download the dataset from Hugging Face.
+git clone https://huggingface.co/datasets/viviwang/MARINER
+```
