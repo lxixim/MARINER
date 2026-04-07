@@ -66,3 +66,5 @@ MARINER is built under the novel Entity-Environment-Event (3E) paradigm, compris
 🎨Task-Specific Baselines: The proposed MARINER-7B model is benchmarked against scale-matched open-source variants to demonstrate the effectiveness of domain-specific adaptation.
 
 Detailed evaluation metrics for the three core tasks—classification, detection, and VQA—along with additional implementation details, are provided in the Appendix.
+
+## 📁 QucikStart
