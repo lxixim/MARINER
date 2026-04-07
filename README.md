@@ -70,10 +70,10 @@ Detailed evaluation metrics for the three core tasks—classification, detection
 ## 📁 QucikStart
 ```text
 MARINER/
-├── docs/                # Project page source code
-├── Appendix/                 # The appendix of the article
-├── train_7B_classify.py    # Qwen2.5-VL-7B-Instruct classification task training code      
-├── inference_classify.py       # Inference code for classification tasks
-├── evaluate_classify.py      # Classification task evaluation code
-├── requirements.txt     # Dependencies for evaluation
-└── README.md
+├── 📂docs/                # Project page source code
+├── 📂Appendix/                 # The appendix of the article
+├── 📄train_7B_classify.py    # Qwen2.5-VL-7B-Instruct classification task training code      
+├── 📄inference_classify.py       # Inference code for classification tasks
+├── 📄evaluate_classify.py      # Classification task evaluation code
+├── 📄requirements.txt     # Dependencies for evaluation
+└── 📄README.md
