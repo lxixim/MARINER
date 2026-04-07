@@ -140,3 +140,5 @@ Evaluation for a classification task.
 ```bash
 python evaluate_classify.py
 ```
+
+The evaluation generates comprehensive metrics including Top-1 Accuracy, Macro F1, and mean Accuracy (mAcc) for performance assessment. Similar testing procedures can be applied to other tasks with their respective evaluation scripts.
