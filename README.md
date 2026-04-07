@@ -5,14 +5,13 @@
   <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
       <span style="color: #666; font-size: 0.9em;">[2026/04/06]</span>
       <span>👋</span>
-      <span>Release Datasets. 
+      <span>Upload appendix. 
         <a href="https://github.com/lxixim/MARINER/blob/main/Appendix/Appendix.pdf" 
            target="_blank" 
            rel="noopener noreferrer"
            style="color: #1a73e8; text-decoration: none; font-weight: 500;">
-          🤗 Dataset.
+          🤗 Appendix.
         </a>
-       (Due to project requirements, the training set needs to be applied for.)
       </span>
     </li>
     <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
