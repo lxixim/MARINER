@@ -4,20 +4,24 @@
 
 - [2026/04/09] 🌐 Dataset Website: **[http://159.75.89.220/](http://159.75.89.220/)** (Account: `viewer01` Password: `Viewer@2026`). The project is under active development, and the dataset will be continuously iterated and improved based on requirements.
 - [2026/04/06] 👋 Upload appendix. **[Appendix.](https://github.com/lxixim/MARINER/blob/main/Appendix/Appendix.pdf)**
-- [2026/04/06] 👋 Datasets: The training dataset requires application for access due to project requirements. The test dataset is publicly available at 🤗 **[Test Dataset.](https://huggingface.co/datasets/lxixim/MARINER)**
+- [2026/04/06] 👋 Datasets: The training dataset requires application for access due to project requirements. The test dataset is publicly available at 🤗**[Test Dataset.](https://huggingface.co/datasets/lxixim/MARINER)**
 - [2026/04/06] 👋 Unupload paper. **[Arxiv.](https://arxiv.org/abs/XXXX.XXXXX)**
 
 ## 🌟 Overview
 
 MARINER evaluates Multimodal Large Language Models (MLLMs) across three progressive dimensions: Perception (fine-grained classification, object detection), Spatial Understanding (viewpoint estimation, spatial relationships), and Reasoning (environmental state inference, operational status judgment). Built upon an innovative "Entity-Environment-Event" (3E) paradigm, this benchmark comprises 16,629 images from diverse sources, covering 63 fine-grained vessel categories, 4 types of harsh weather conditions, and 5 typical dynamic maritime events. MARINER provides a comprehensive evaluation of mainstream MLLMs through 3 task categories and multiple metrics, revealing that even state-of-the-art models face significant challenges in performing fine-grained discrimination and causal reasoning within complex maritime scenarios.
 
-Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale.
+<img src="imgs/case_ship.png" alt="case_ship" style="width:100%; max-width:800px; height:auto;">
+
+Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale. 
+
+<img src="imgs/table1.jpg" alt="Comparison of ship-related datasets" style="width:100%; max-width:800px; height:auto;">
 
 ## ✨ Data Construct
 
 MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
 
-
+<img src="imgs/datasets.png" alt="Comparison of ship-related datasets" style="width:100%; max-width:800px; height:auto;">
 
 ## 📊 Benchmark Statistics
 
@@ -37,7 +41,7 @@ Detailed evaluation metrics for the three core tasks—classification, detection
 MARINER/
 ├── 📂docs/                # Project page source code
 ├── 📂Appendix/                 # The appendix of the article
-├── 📄train_7B_classify.py    # Qwen2.5-VL-7B-Instruct classification task training code    
+├── 📄train_7B_classify.py    # Qwen2.5-VL-7B-Instruct classification task training code  
 ├── 📄inference_classify.py       # Inference code for classification tasks
 ├── 📄evaluate_classify.py      # Classification task evaluation code
 ├── 📄requirements.txt     # Dependencies for evaluation
