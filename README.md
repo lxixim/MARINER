@@ -1,54 +1,26 @@
 # MARINER: A 3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments
 
 ## 🔥🔥🔥 News !!
- <ul style="padding-left: 1.2em; margin: 0 0 1.8em 0; list-style: none;">
-  <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
-      <span style="color: #666; font-size: 0.9em;">[2026/04/06]</span>
-      <span>👋</span>
-      <span>Upload appendix. 
-        <a href="https://github.com/lxixim/MARINER/blob/main/Appendix/Appendix.pdf" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           style="color: #1a73e8; text-decoration: none; font-weight: 500;">
-           Appendix.
-        </a>
-      </span>
-    </li>
-    <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
-      <span style="color: #666; font-size: 0.9em;">[2026/04/06]</span>
-      <span>👋</span>
-      <span>Datasets: The training dataset requires application for access due to project requirements. The test dataset is publicly available at 🤗<a href="https://huggingface.co/datasets/lxixim/MARINER" target="_blank" rel="noopener noreferrer" style="color: #1a73e8; text-decoration: none; font-weight: 500;">Test Dataset.</a></span>
-    </li>
-    <li style="margin-bottom: 1em; display: flex; align-items: flex-start; gap: 0.6em;">
-      <span style="color: #666; font-size: 0.9em;">[2026/04/06]</span>
-      <span>👋</span>
-      <span>Unupload paper. 
-        <a href="https://arxiv.org/abs/XXXX.XXXXX" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           style="color: #1a73e8; text-decoration: none; font-weight: 500;">
-          Arxiv.
-        </a>
-      </span>
-    </li>
-  </ul>
 
+- [2026/04/06] 👋 Upload appendix. **[Appendix.](https://github.com/lxixim/MARINER/blob/main/Appendix/Appendix.pdf)**
+- [2026/04/06] 👋 Datasets: The training dataset requires application for access due to project requirements. The test dataset is publicly available at 🤗**[Test Dataset.](https://huggingface.co/datasets/lxixim/MARINER)**
+- [2026/04/09] 🌐 Dataset Website: **[http://159.75.89.220/](http://159.75.89.220/)** (Account: `viewer01` Password: `Viewer@2026`). The project is under active development, and the dataset will be continuously iterated and improved based on requirements.
+- [2026/04/06] 👋 Unupload paper. **[Arxiv.](https://arxiv.org/abs/XXXX.XXXXX)**
 
 ## 🌟 Overview
 
 MARINER evaluates Multimodal Large Language Models (MLLMs) across three progressive dimensions: Perception (fine-grained classification, object detection), Spatial Understanding (viewpoint estimation, spatial relationships), and Reasoning (environmental state inference, operational status judgment). Built upon an innovative "Entity-Environment-Event" (3E) paradigm, this benchmark comprises 16,629 images from diverse sources, covering 63 fine-grained vessel categories, 4 types of harsh weather conditions, and 5 typical dynamic maritime events. MARINER provides a comprehensive evaluation of mainstream MLLMs through 3 task categories and multiple metrics, revealing that even state-of-the-art models face significant challenges in performing fine-grained discrimination and causal reasoning within complex maritime scenarios.
 
-<img src="imgs/case_ship.png" alt="case_ship" style="width:100%; max-width:800px; height:auto;">
-Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale. 
-<img src="imgs/table1.jpg" alt="Comparison of ship-related datasets" style="width:100%; max-width:800px; height:auto;">
+Comparison of ship-related datasets in terms of source diversity, category scale, environmental coverage, event representation, task coverage, and dataset scale.
 
 ## ✨ Data Construct
 
 MARINER is built under the novel Entity-Environment-Event (3E) paradigm, comprising 16,629 multi-source maritime images. The dataset covers 63 fine-grained vessel categories (Entity), diverse adverse environments including fog, rain, low-light, and glare conditions (Environment), and 5 typical dynamic maritime incidents such as collisions, capsizing, and fires (Event). The benchmark spans three core tasks: fine-grained classification, object detection, and visual question answering, enabling comprehensive evaluation of multimodal models in open-water scenarios.
 
-<img src="imgs/datasets.png" alt="Comparison of ship-related datasets" style="width:100%; max-width:800px; height:auto;">
+
 
 ## 📊 Benchmark Statistics
+
 🧪Model Evaluation. A diverse set of Multimodal Large Language Models (MLLMs) is evaluated on MARINER to assess maritime fine-grained perception and reasoning capabilities across various architectures, scales, and training paradigms. The evaluation encompasses the following model categories:
 
 🔒Proprietary Models: Advanced private models, including GPT-4o, GPT-4.1, Gemini-2.5-Flash, and Gemini-2.5-Pro-Thinking, are included to establish performance upper bounds.
@@ -60,11 +32,12 @@ MARINER is built under the novel Entity-Environment-Event (3E) paradigm, compris
 Detailed evaluation metrics for the three core tasks—classification, detection, and VQA—along with additional implementation details, are provided in the Appendix.
 
 ## 📁 QucikStart
+
 ```text
 MARINER/
 ├── 📂docs/                # Project page source code
 ├── 📂Appendix/                 # The appendix of the article
-├── 📄train_7B_classify.py    # Qwen2.5-VL-7B-Instruct classification task training code      
+├── 📄train_7B_classify.py    # Qwen2.5-VL-7B-Instruct classification task training code    
 ├── 📄inference_classify.py       # Inference code for classification tasks
 ├── 📄evaluate_classify.py      # Classification task evaluation code
 ├── 📄requirements.txt     # Dependencies for evaluation
@@ -72,9 +45,11 @@ MARINER/
 ```
 
 ## 🧪 Usage
+
 This section demonstrates how to use our evaluation script to test different tasks. Here we take the MARINER classification task as an example.
 
 **I. Environment Setup.**
+
 ```bash
 # Clone the repository
 git clone https://github.com/lxixim/MARINER.git
