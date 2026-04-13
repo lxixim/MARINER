@@ -113,3 +113,21 @@ python evaluate_classify.py
 ```
 
 The evaluation generates comprehensive metrics including Top-1 Accuracy, Macro F1, and mean Accuracy (mAcc) for performance assessment. Similar testing procedures can be applied to other tasks with their respective evaluation scripts.
+
+## 📚 Citation
+
+If you find MARINER useful in your research, please cite:
+
+```bibtex
+@misc{liao2026mariner,
+  title={MARINER: A 3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments},
+  author={Xingming Liao and Ning Chen and Muying Shu and Yunpeng Yin and Peijian Zeng and Zhuowei Wang and Nankai Lin and Lianglun Cheng},
+  year={2026},
+  eprint={2604.08615},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2604.08615},
+}
+```
+
+Paper link: [arXiv:2604.08615](https://arxiv.org/abs/2604.08615)
