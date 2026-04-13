@@ -129,5 +129,3 @@ If you find MARINER useful in your research, please cite:
   url={https://arxiv.org/abs/2604.08615},
 }
 ```
-
-Paper link: [arXiv:2604.08615](https://arxiv.org/abs/2604.08615)
