@@ -6,6 +6,7 @@ import warnings
 import argparse
 from PIL import Image
 from tqdm import tqdm
+from torch.utils.data import random_split
 from transformers import (
     AutoProcessor, 
     Qwen2_5_VLForConditionalGeneration,
@@ -31,7 +32,7 @@ def parse_args():
     parser.add_argument("--json_root", type=str, required=True, help="JSON directory")
     parser.add_argument("--output_root", type=str, default="/data/cn/llama/Classify_Output")
     
-    # LoRA Parameters (Heavy LoRA configuration)
+    # LoRA Parameters
     parser.add_argument("--lora_r", type=int, default=64)
     parser.add_argument("--lora_alpha", type=int, default=128)
     parser.add_argument("--lora_dropout", type=float, default=0.05)
@@ -39,19 +40,21 @@ def parse_args():
     # Training Hyperparameters
     parser.add_argument("--num_train_epochs", type=int, default=3)
     parser.add_argument("--per_device_train_batch_size", type=int, default=4)
-    parser.add_argument("--gradient_accumulation_steps", type=int, default=8) # Effective BS = 32
+    parser.add_argument("--gradient_accumulation_steps", type=int, default=8)
     parser.add_argument("--learning_rate", type=float, default=2e-5)
     parser.add_argument("--weight_decay", type=float, default=0.01)
     parser.add_argument("--warmup_ratio", type=float, default=0.05)
     parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
     parser.add_argument("--max_length", type=int, default=2048)
+    parser.add_argument("--seed", type=int, default=42)
     
     parser.add_argument("--save_steps", type=int, default=100)
     parser.add_argument("--logging_steps", type=int, default=10)
+    parser.add_argument("--save_total_limit", type=int, default=3)
     
     return parser.parse_args()
 
-# ================= 2. Dataset Construction =================
+# ================= 1. Dataset Construction =================
 class ShipClassificationDataset(torch.utils.data.Dataset):
     def __init__(self, samples, processor, max_length=2048):
         self.samples = samples
@@ -106,7 +109,6 @@ class ShipClassificationDataset(torch.utils.data.Dataset):
             if im_start_mask.any():
                 im_start_indices = im_start_mask.nonzero(as_tuple=True)[0]
                 assistant_start_idx = im_start_indices[-1] + 1
-                # Mask user instructions and image tokens in labels
                 labels[:assistant_start_idx] = -100
 
             labels[input_ids == self.processor.tokenizer.pad_token_id] = -100
@@ -142,6 +144,7 @@ class VLDataCollator:
             
         return batch
 
+# ================= 2. Training Logic =================
 def train(args):
     model_path = os.path.join(args.model_root, args.model_name)
     output_dir = os.path.join(args.output_root, args.model_name)
@@ -161,7 +164,6 @@ def train(args):
         attn_implementation="flash_attention_2", 
     )
     
-    # Enable gradient checkpointing to save VRAM
     model.gradient_checkpointing_enable()
     model.enable_input_require_grads()
 
@@ -177,9 +179,19 @@ def train(args):
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()
 
-    print("Preparing Dataset...")
-    samples = [{"image_path": f"{args.image_root}/test.jpg", "label": "Container_ship"}] * 100 
-    train_dataset = ShipClassificationDataset(samples, processor, max_length=args.max_length)
+    print("Preparing Dataset and Splitting 7:3...")
+    # Load your actual samples here. Placeholder used below:
+    raw_samples = [{"image_path": f"{args.image_root}/test.jpg", "label": "Container_ship"}] * 100 
+    full_dataset = ShipClassificationDataset(raw_samples, processor, max_length=args.max_length)
+    
+    train_size = int(0.7 * len(full_dataset))
+    val_size = len(full_dataset) - train_size
+    train_dataset, val_dataset = random_split(
+        full_dataset, 
+        [train_size, val_size],
+        generator=torch.Generator().manual_seed(args.seed)
+    )
+    print(f"Train size: {len(train_dataset)}, Validation size: {len(val_dataset)}")
     
     print("Setting up Training Arguments...")
     training_args = TrainingArguments(
@@ -193,25 +205,34 @@ def train(args):
         warmup_ratio=args.warmup_ratio,
         logging_steps=args.logging_steps,
         save_steps=args.save_steps,
+        eval_steps=args.save_steps,
+        eval_strategy="steps",
+        save_strategy="steps",
+        load_best_model_at_end=True,
+        metric_for_best_model="eval_loss",
+        greater_is_better=False,
+        save_total_limit=args.save_total_limit,
         bf16=True,
         gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant": False},
         report_to="none",
-        remove_unused_columns=False, # Essential for VLM
+        remove_unused_columns=False,
         dataloader_num_workers=4,
+        seed=args.seed
     )
     
     trainer = Trainer(
         model=model,
         args=training_args,
         train_dataset=train_dataset,
+        eval_dataset=val_dataset,
         data_collator=VLDataCollator(processor)
     )
     
     print("Starting Training...")
     trainer.train()
     
-    print(f"Training complete! Saving LoRA to: {output_dir}")
+    print(f"Training complete! Saving best LoRA to: {output_dir}")
     trainer.save_model(output_dir)
     processor.save_pretrained(output_dir)
 
