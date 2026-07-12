@@ -4,7 +4,7 @@
 
 ## 🔥🔥🔥 News !!
 
-- [2026/07/10] 🎉 MARINER is accepted by **ACM Multimedia 2026 (Dataset Track)**! **[OpenReview.](https://openreview.net/forum?id=mgiBIm2ZJG)**
+- [2026/07/10] 🎉 MARINER is accepted by **ACM Multimedia 2026 (Dataset Track)**!
 - [2026/04/09] 🌐 Dataset Website: **[http://159.75.89.220/](http://159.75.89.220/)** (Account: `viewer01` Password: `Viewer@2026`). The project is under active development, and the dataset will be continuously iterated and improved based on requirements.
 - [2026/04/06] 👋 Upload appendix. **[Appendix.](https://github.com/lxixim/MARINER/blob/main/Appendix/Appendix.pdf)**
 - [2026/04/06] 👋 Datasets: The training dataset requires application for access due to project requirements. The test dataset is publicly available at 🤗 **[Test Dataset.](https://huggingface.co/datasets/lxixim/MARINER)**
