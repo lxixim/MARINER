@@ -1,7 +1,5 @@
 # MARINER: A 3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments
 
-🎉 **Accepted by ACM MM 2026!**
-
 ## 🔥🔥🔥 News !!
 
 - [2026/07/10] 🎉 MARINER is accepted by **ACM MM 2026 !**
